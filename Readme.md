@@ -20,3 +20,12 @@ g++ -std=c++11 -o SimpleCompiler main.cpp ExpressionTree.cpp
 # Or open the web UI in a browser (no build needed):
 start index.html
 ```
+
+GitHub Pages
+------------
+
+I added a `docs/` site so you can enable GitHub Pages from the `master` branch. After Pages finishes building (may take a minute), your site will be available at:
+
+https://sudhanshu898.github.io/SimpleCompiler_Arithmeti_Expression/
+
+If the site does not appear, enable GitHub Pages in the repo Settings -> Pages and choose the `master` branch / `docs/` folder.
