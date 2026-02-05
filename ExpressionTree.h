@@ -20,5 +20,6 @@ vector<string> infixToPostfix(const vector<string>& tokens);
 Node* buildAST(const vector<string>& postfix);
 double evaluate(Node* root);
 void deleteTree(Node* root);
+void printTree(Node* root, int indent = 0);
 
 #endif

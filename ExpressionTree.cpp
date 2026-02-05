@@ -3,6 +3,7 @@
 #include <cctype>
 #include <sstream>
 #include <map>
+#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -107,4 +108,12 @@ void deleteTree(Node* root) {
     deleteTree(root->left);
     deleteTree(root->right);
     delete root;
+}
+
+void printTree(Node* root, int indent) {
+    if (!root) return;
+    printTree(root->right, indent + 4);
+    for (int i = 0; i < indent; ++i) cout << ' ';
+    cout << root->value << '\n';
+    printTree(root->left, indent + 4);
 }

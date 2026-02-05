@@ -1,0 +1,19 @@
+:root{--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2;--accent:#6ee7b7;--accent2:#60a5fa}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%,#071a2a 100%);color:#e6eef6}
+.container{max-width:980px;margin:36px auto;padding:20px}
+header h1{margin:0;font-size:28px}
+.lead{margin:4px 0 18px;color:var(--muted)}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+.input-card textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;resize:vertical}
+.controls{display:flex;gap:8px;align-items:center;margin-top:10px}
+.btn{padding:8px 12px;border-radius:8px;border:0;background:rgba(255,255,255,0.03);color:inherit;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#042430;font-weight:600}
+.toggle{margin-left:auto;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 460px;gap:16px;margin-top:16px}
+.output .mono,.mono{font-family:monospace;background:rgba(0,0,0,0.12);padding:8px;border-radius:6px}
+.small{font-size:13px}
+.ast #astWrap{overflow:auto;height:360px;padding:8px}
+#ast{width:100%;height:360px}
+footer{margin-top:14px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.grid{grid-template-columns:1fr;}.ast{order:3;height:auto}}

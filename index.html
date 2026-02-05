@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SimpleCompiler — Expression UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SimpleCompiler</h1>
+      <p class="lead">Evaluate arithmetic expressions and visualize the parse tree.</p>
+    </header>
+
+    <main>
+      <div class="card input-card">
+        <textarea id="expr" placeholder="Type expression, e.g. (3+4)*2 - 5/1" rows="2"></textarea>
+        <div class="controls">
+          <button id="evalBtn" class="btn primary">Evaluate</button>
+          <button id="clearBtn" class="btn">Clear</button>
+          <label class="toggle"><input id="showAst" type="checkbox" checked> Show AST</label>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card output">
+          <h3>Result</h3>
+          <div id="result" class="mono">—</div>
+
+          <h3>Tokens</h3>
+          <div id="tokens" class="mono small">—</div>
+
+          <h3>Postfix</h3>
+          <div id="postfix" class="mono small">—</div>
+        </div>
+
+        <div class="card ast" id="astCard">
+          <h3>Parse Tree (AST)</h3>
+          <div id="astWrap">
+            <svg id="ast" xmlns="http://www.w3.org/2000/svg"></svg>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <small>Type <strong>:q</strong> in the box to clear and quit input editing.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
